@@ -1,27 +1,14 @@
-# NgCompleteGuide
+# Recipe book application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+This is an example app that is constructed using identical components such as recipeModule, shoppingListModule, and authModule with lazy loading.
 
-## Development server
+Prior to running the app, please copy your firebase API key and insert it into the environment file. Additionally, paste your firebase project URL. Finally, execute the following docker command: ***docker compose up -d ***.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://github.com/najiboulhouch/ng-complete-guide/assets/5085010/e0815736-af7b-4ac5-9ed7-d7d113018ff7)
 
-## Code scaffolding
+![image](https://github.com/najiboulhouch/ng-complete-guide/assets/5085010/72afbf4f-4c89-4207-9ec4-ec18928915ab)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
