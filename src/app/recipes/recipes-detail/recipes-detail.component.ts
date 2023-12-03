@@ -2,9 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 import { ActivatedRoute , Params , Router} from '@angular/router'
+import { NgFor, NgIf } from '@angular/common';
+import { DropdownDirective } from 'src/app/shared/dropdown.directive';
 
 @Component({
   selector: 'app-recipes-detail',
+  standalone : true,
+  imports : [NgIf , DropdownDirective , NgFor],
   templateUrl: './recipes-detail.component.html',
   styleUrls: ['./recipes-detail.component.css']
 })

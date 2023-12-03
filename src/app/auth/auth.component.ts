@@ -1,13 +1,17 @@
 import { Component, ComponentFactory, ComponentFactoryResolver, OnDestroy, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { AuthService , AuthResponseData } from './auth.service';
 import { Observable, Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 import { AlertComponent } from 'src/app/shared/alert/alert.component';
 import { PlaceHolderDirective } from 'src/app/shared/placeholder/placeholder.directive';
+import { NgIf } from '@angular/common';
+import { LoadingSpinnerComponent } from '../shared/loading-spinner/loading-spinner.component';
 
 @Component({
   selector: 'app-auth',
+  standalone : true,
+  imports : [NgIf, FormsModule , PlaceHolderDirective , LoadingSpinnerComponent],
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.css']
 })

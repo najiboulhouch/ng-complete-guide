@@ -3,9 +3,13 @@ import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 import {Router , ActivatedRoute} from '@angular/router'
 import { Subscription } from 'rxjs';
+import { RecipesItemComponent } from './recipes-item/recipes-item.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-recipes-list',
+  standalone : true ,
+  imports : [RecipesItemComponent , NgFor],
   templateUrl: './recipes-list.component.html',
   styleUrls: ['./recipes-list.component.css']
 })

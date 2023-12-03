@@ -2,9 +2,8 @@ import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { RecipeService } from "../recipes/recipe.service";
 import { Recipe } from "../recipes/recipe.model";
-import { exhaustMap, map, take, tap } from "rxjs/operators";
+import { map, tap } from "rxjs/operators";
 import { Observable } from "rxjs";
-import { AuthService } from "../auth/auth.service";
 import { environment } from "src/environments/environment";
 
 @Injectable({

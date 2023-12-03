@@ -2,10 +2,15 @@ import { Component, EventEmitter, OnDestroy, OnInit, Output } from "@angular/cor
 import { DataStorageService } from "../shared/data-storage.service";
 import { AuthService } from "../auth/auth.service";
 import { Subscription } from "rxjs";
+import { NgIf } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { DropdownDirective } from "../shared/dropdown.directive";
 
 @Component(
     {
         selector: 'app-header',
+        standalone : true,
+        imports : [ NgIf , RouterModule , DropdownDirective],
         templateUrl: './header.component.html'
     }
 )

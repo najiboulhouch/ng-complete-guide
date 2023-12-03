@@ -1,7 +1,8 @@
 import { Directive, ViewContainerRef } from "@angular/core";
 
 @Directive({
-    selector : '[appPlaceHolder]'
+    selector : '[appPlaceHolder]' ,
+    standalone : true , 
 })
 export class PlaceHolderDirective {
 

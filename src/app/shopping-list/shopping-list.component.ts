@@ -3,9 +3,13 @@ import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from './shopping-list.service';
 import { Subject, Subscription } from 'rxjs';
 import { LoggingService } from '../logging.service';
+import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-shopping-list',
+  standalone : true,
+  imports : [ShoppingEditComponent , NgFor],
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.css']
 })
